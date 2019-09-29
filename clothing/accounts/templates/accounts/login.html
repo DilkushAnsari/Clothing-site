@@ -11,4 +11,6 @@
         <input type="submit" value="Login" />
     </form>
     <p>Not got an account? <a href="{% url 'accounts:signup' %}">Sign Up</a></p>
+    <p><strong>-- OR --</strong></p>
+  <a href="{% url 'social:begin' 'google-oauth2' %}">Login with Google</a><br>
 {% endblock %}
